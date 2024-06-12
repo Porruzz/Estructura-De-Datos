@@ -1,0 +1,9 @@
+Ejercicio de aplicación.
+Implemente el algoritmo de ordenamiento Radix Sort en lenguaje de programación Java,
+Python, C, C++, o en el lenguaje de su predilección.
+Que el algoritmo pueda ordenar:
+1. Números por agrupación desde las cifras menos significativas a las más significativas (LSD)
+en sistemas de numeración: Binario, Octal, Hexadecimal.
+2. Cadenas de caracteres por agrupación desde el carácter menos significativas al carácter
+más significativas (LSD).
+3. Caracteres desde el carácter menos significativas al carácter más significativas (LSD).

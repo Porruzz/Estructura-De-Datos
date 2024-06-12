@@ -1,0 +1,68 @@
+def ordenacion_radixsort(vector):
+    if isinstance(vector[0], str):
+        return radixsort_cadena(vector)
+    elif isinstance(vector[0], int):
+        ndig = calcular_numero_maximo_de_digitos(vector)
+        peso = 1
+        for i in range(ndig):
+            urnas = [[] for _ in range(10)]  # Crear urnas vacías para cada dígito (0-9)
+            for num in vector:
+                d = (num // peso) % 10  # Determinar el dígito actual
+                urnas[d].append(num)    # Agregar el número en la urna correspondiente al dígito
+            j = 0
+            while j < 10 and not urnas[j]:  # Buscar la primera urna no vacía
+                j += 1
+            for r in range(j + 1, 10):  # Enlazar urnas vacías con urnas no vacías
+                urnas[j].extend(urnas[r])
+            # Recorrer la lista-urna resultante de la concatenación
+            r = 0
+            for num in urnas[j]:
+                vector[r] = num
+                r += 1
+            peso *= 10
+        return vector
+
+def calcular_numero_maximo_de_digitos(vector):
+    maximo = max(vector)
+    digitos = 0
+    while maximo > 0:
+        maximo //= 10
+        digitos += 1
+    return digitos
+
+def radixsort_cadena(vector):
+    max_len = max(len(word) for word in vector)
+    for i in range(max_len - 1, -1, -1):
+        urnas = [[] for _ in range(128)]  # Create buckets (ASCII 0-127)
+        for word in vector:
+            if len(word) > i:
+                urnas[ord(word[i])].append(word)
+            else:
+                urnas[0].append(word)
+        vector = [word for bucket in urnas for word in bucket]
+    return vector
+
+# Ejemplos de uso:
+print("Binario:")
+vector_binario = [110010, 10100, 1010, 101000]
+print("Vector original:", vector_binario)
+vector_ordenado_binario = ordenacion_radixsort(vector_binario)
+print("Vector ordenado:", vector_ordenado_binario)
+
+print("\nOctal:")
+vector_octal = [62, 12, 24, 50]
+print("Vector original:", vector_octal)
+vector_ordenado_octal = ordenacion_radixsort(vector_octal)
+print("Vector ordenado:", vector_ordenado_octal)
+
+print("\nHexadecimal:")
+vector_hexadecimal = [0x1C8, 0xA89, 0x401, 0x16C, 0x1E2, 0x173]
+print("Vector original:", vector_hexadecimal)
+vector_ordenado_hexadecimal = ordenacion_radixsort(vector_hexadecimal)
+print("Vector ordenado:", vector_ordenado_hexadecimal)
+
+print("\nCadena de texto:")
+vector_cadena = ["radix", "prueba", "la", "sort"]
+print("Vector original:", vector_cadena)
+vector_ordenado_cadena = ordenacion_radixsort(vector_cadena)
+print("Vector ordenado:", vector_ordenado_cadena)
