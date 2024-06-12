@@ -1,0 +1,18 @@
+Ejercicio 1.
+
+En el puerto marítimo de buenaventura (Colombia), existe una bodega con una capacidad máxima para almacenar 504 (quinientos cuatro) contenedores de 20 (veinte) pies cada uno. Los contenedores se almacenan según los siguientes datos:
+
+Capacidad de almacenamiento 56 contenedores por fila.
+Altura máxima de almacenaje 8 contendores.
+Cada contenedor tiene un código compuesto de una letra y un numero de cuatro cifras.
+Diseñe e implemente un programa que cumpla con los siguientes requerimientos.
+
+Declare las estructuras de datos dinámicas lineales que permitan dar solución al ejercicio.
+
+Implemente una función que permita almacenar 504 (quinientos cuatro) contenedores, teniendo en cuenta que la altura máxima de almacenaje es de 8 contendores uno encima de otro.
+
+Implemente una función recursiva para dar salida a un contenedor.
+
+3.1. La salida de un contenedor se realiza por el código asignado, es decir que puede salir cualquier contenedor no interesa la ubicación en la bodega.
+
+3.2. Muestre por consola la ubicación del contenedor: Fila, Columna y Posición.

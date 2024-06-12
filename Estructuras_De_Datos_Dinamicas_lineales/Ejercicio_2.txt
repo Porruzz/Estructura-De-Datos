@@ -1,0 +1,13 @@
+Ejercicio 2. Un conjunto residencial tiene 6 torres y cada torre tiene una capacidad total de 60 apartamentos y 6 apartamentos por piso. Los apartamentos se identifican por un dato consecutiva así: letra que identifica la torre y un numero de tres cifras de 1 hasta 6 según el piso. Por cada apartamento, un vecino paga un valor por administración. El administrador del edificio cada mes realiza la liquidación del valor a pagar por cuota de administración.
+
+Costo mensual por cuota de administración es de $250.000.
+
+Diseñe e implemente un programa que cumpla con los siguientes requerimientos.
+
+Declare las estructuras de datos dinámicas lineales que permitan dar solución al ejercicio.
+
+Implemente una función que permita almacenar 360 (trecientos sesenta) apartamentos en 6 (seis) torres.
+
+Implemente una función recursiva para mostrar por consola el listado de facturación de una torre especifica y un piso especifico. Ejemplo Torre C piso 6.
+
+a. El listado de facturación debe mostrar por consola: número de torre, piso, número de apartamento, monto a pagar. b. La información de cada apartamento es temporal y se borra en la función que permite generar el listado de facturación.
