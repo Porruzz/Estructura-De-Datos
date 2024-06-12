@@ -1,0 +1,21 @@
+Ejercicio 1.
+Un docente registra por cada grupo, los datos de los estudiantes, las calificaciones obtenidas
+en tres (3) cortes y la nota final en arreglos unidimensionales y bidimensionales. En un arreglo
+unidimensional de tipo entero guarda el Código del estudiante, en un arreglo unidimensional
+de tipo cadena guarda el nombre del estudiante y en el arreglo bidimensional de tipo real, se
+guarda la nota de los tres cortes y la nota final. La nota final se calcula así: final = (corte-1 *
+30% + corte-2 * 30% + corte-3 * 40%).
+Se requiere un TDA en que se implementen funciones recursivas y no recursivas que permitan
+guardar los datos de los estudiantes, las notas y mostrar la siguiente información:
+1. Función para guardar los datos de los estudiantes, las notas de los tres (3) cortes y la nota
+final. (Se requiere llenar los arreglos con datos aleatorios. Se sugiere para el dato nombre
+Estudiante-1, Estudiante-2, Estudiante-3,……).
+2. Función recursiva para buscar un estudiante: clave de dato código del estudiante. Si, el
+código del estudiante existe mostrar los datos del estudiante las tres notas y la nota final. Si
+el código del estudiante no existe enviar un mensaje “ESTUDIANTE NO REGISTRADO”.
+(Se debe implementar el algoritmo de búsqueda binaria. Recuerde que para buscar por el
+código del estudiante los datos deben estar ordenados Ascendentemente por el dato Código
+del estudiante).
+3. Función recursiva para mostrar por consola el informe final del curso con los datos de los
+estudiantes, las tres notas, la nota final y el promedio del grupo, ordenado
+Descendentemente por el dato nota final.

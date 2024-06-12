@@ -1,0 +1,21 @@
+Ejercicio 2.
+La nómina de los empleados de una empresa de ventas online está registrada en dos arreglos
+unidimensionales y un arreglo bidimensional. En el primer arreglo de tipo entero se registra el
+número de identificación, en el segundo arreglo de tipo cadena se registra el nombre del
+empleado y en el arreglo bidimensional se guardan los siguientes datos: sueldo básico,
+deducciones y neto a pagar, el dato neto a pagar se calcula así: neto a pagar = sueldo
+básico – deducciones.
+Se requiere un TDA en que se implementen funciones recursivas que permitan guardar los
+datos de los empleados, los datos de la nómina y mostrar la siguiente información:
+1. Función para registrar los datos de los empleados en los arreglos unidimensionales y los
+datos de la nómina en el arreglo bidimensional. (Se requiere llenar los arreglos con datos
+aleatorios. Se sugiere para el dato nombre Empleado-1, Empleado-2, Empleado-3,……).
+2. Función recursiva para buscar un empleado: clave de dato número de identificación. Si,
+número de identificación existe mostrar el nombre y los siguientes datos: sueldo básico,
+deducciones y neto a pagar. Si el número de identificación no existe enviar un mensaje
+“EMPLEADO NO REGISTRADO”. (Se debe implementar el algoritmo de búsqueda binaria.
+Recuerde que para buscar el número de identificación los datos deben estar ordenados
+Ascendentemente por el dato número de identificación).
+3. Función recursiva para mostrar por consola el informe de la nómina con los datos de los
+empleados, sueldo básico, deducciones y neto a pagar, ordenado Descendentemente por
+el dato neto a pagar.
